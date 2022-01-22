@@ -62,7 +62,7 @@ public class C05_YouTubeTesti {
        //  wrongTitleTest  => Sayfa basliginin “youtube” olmadigini dogrulayin
         String actualTitle2 = driver.getTitle();
         String expectedWrongTitle="youtube";
-        // Assert.assertNotEquals("Sayfa başlıgı youtube degildir." ,expectedTitle,actualTitle2);
+        // Assert.assertNotEquals("Sayfa başlıgı youtube degildir." ,expectedWrongTitle,actualTitle2);
         Assert.assertFalse( expectedWrongTitle.equals(actualTitle2) );
 
     }
