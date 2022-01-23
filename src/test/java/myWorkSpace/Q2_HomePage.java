@@ -34,7 +34,7 @@ public class Q2_HomePage {
     }
 
     @Test
-    public void test01() {
+    public void arrivals() {
         //3) Click on Shop Menu
         driver.findElement(By.xpath("//a[text()='Shop']")).click();
 
