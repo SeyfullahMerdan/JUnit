@@ -14,8 +14,6 @@ public class C01_TekrarTesti {
     public static void main(String[] args) {
 
         WebDriverManager.chromedriver().setup();
-
-
         WebDriver driver=new ChromeDriver();
 
         //2- https://www.google.com/ adresine gidin

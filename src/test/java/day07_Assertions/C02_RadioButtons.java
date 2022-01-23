@@ -24,7 +24,6 @@ public class C02_RadioButtons {
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
     }
 
 
@@ -34,25 +33,14 @@ public class C02_RadioButtons {
         driver.findElement(By.xpath("//button[text()='Tüm Çerezlere İzin Ver']")).click();
         driver.findElement(By.xpath("//a[text()='Yeni Hesap Oluştur']")).click();
         driver.findElement(By.xpath("//input[@value='2']")).click();
-
     }
-
-
-
 
 
 
     @After
     public void teardown() {
-
-
+        driver.close();
     }
-
-
-
-
-
-
 
 
 

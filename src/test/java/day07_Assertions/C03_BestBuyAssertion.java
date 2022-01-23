@@ -33,20 +33,16 @@ public class C03_BestBuyAssertion {
     public void test01(){
 
         // 2)https://www.bestbuy.com/ Adresine gidin farkli test method’lari olusturarak asagidaki testleri yapin
-
         driver.get("https://www.bestbuy.com/");
 
 
         // Sayfa URL’inin https://www.bestbuy.com/ ‘a esit oldugunu test edin
-
         String actualUrl=driver.getCurrentUrl();
         String expectedUrl="https://www.bestbuy.com/";
 
         Assert.assertEquals( "Lütfen test değerlerini gözden geçiriniz." ,expectedUrl,actualUrl);
 
-
         // titleTest => Sayfa başlığının “Rest” içermediğini(contains) test edin
-
         String actualTitle=driver.getTitle();
         String istenmeyenKelime="Rest";
 
@@ -54,34 +50,19 @@ public class C03_BestBuyAssertion {
         System.out.println("Bu satır çalışmaz. Yukarıda false alınca orada kod çalışmayı durdurur");
 
         // logoTest => BestBuy logosunun görüntülendigini test edin
-
         WebElement logoElementi=driver.findElement(By.xpath("(//img[@alt='Best Buy Logo'])[1]"));
         Assert.assertTrue("logo görünmüyor" , logoElementi.isDisplayed());
 
-
         // FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
-
         WebElement francais= driver.findElement(By.xpath("//button[text()='Français']"));
         Assert.assertTrue(francais.isDisplayed());
-
     }
 
 
     @After
     public void teardown() {
-
-        // driver.close();
-
+        driver.close();
     }
-
-
-
-
-
-
-
-
-
 
 
 
