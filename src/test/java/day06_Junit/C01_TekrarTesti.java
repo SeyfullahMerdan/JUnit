@@ -45,8 +45,12 @@ public class C01_TekrarTesti {
         //7- sonuc sayisinin 10 milyon’dan fazla oldugunu test edin
 
         String resultElementString=resultElement.getText();
-        String resultWord[]=resultElementString.split(" ");
+       // String resultWord[]=resultElementString.split(" ");
        // System.out.println(Arrays.toString(resultWord));
+
+        resultElementString = (resultElementString.substring(9,19));
+
+       /*
         String resultNutellaNumber=resultWord[1];
         resultNutellaNumber=resultNutellaNumber.replace(".","");
         System.out.println(resultNutellaNumber);
@@ -55,7 +59,7 @@ public class C01_TekrarTesti {
 
         System.out.println(nutellaSearchResult>10000000 ? "Nutella search test PASS" : "Nutella search test FAİLED");
 
-        //8-Sayfayi kapatin
+        //8-Sayfayi kapatin */
 
 
 
