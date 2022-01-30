@@ -2,19 +2,21 @@ package praktice;
 
 public class Info {
     /*
-    note :
-JavaScriptExecutor nedir?
-JavaScriptExecutor, JavaScript'i Selenium Web sürücüsü aracılığıyla çalıştırmaya yardımcı olan bir Arayüzdür.
-JavaScriptExecutor, javascript'i seçilen pencerede veya geçerli sayfada çalıştırmak için "executescript" ve "executeAsyncScript"
-olmak üzere iki yöntem sunar.
+                            note :
+       JavaScriptExecutor nedir?
 
-JavaScriptExecutor'a neden ihtiyacımız var?
-Selenium Webdriver'da, bir web sayfasındaki işlemleri tanımlamak ve gerçekleştirmek için
-XPath, CSS vb. gibi konum belirleyiciler kullanılır.
-Bu konum belirleyicilerin çalışmaması durumunda JavaScriptExecutor'ı kullanabilirsiniz.
-Bir web öğesinde istenen bir işlemi gerçekleştirmek için JavaScriptExecutor'ı kullanabilirsiniz.
-Selenium, javaScriptExecutor'ı destekler. Ekstra bir eklenti veya eklentiye gerek yoktur.
-JavaScriptExecutor kullanmak için komut dosyasında (org.openqa.selenium.JavascriptExecutor) içe aktarmanız yeterlidir.
+   JavaScriptExecutor, JavaScript'i Selenium Web sürücüsü aracılığıyla çalıştırmaya yardımcı olan bir Arayüzdür.
+   JavaScriptExecutor, javascript'i seçilen pencerede veya geçerli sayfada çalıştırmak için "executescript" ve "executeAsyncScript"
+   olmak üzere iki yöntem sunar.
+
+       JavaScriptExecutor'a neden ihtiyacımız var?
+
+   Selenium Webdriver'da, bir web sayfasındaki işlemleri tanımlamak ve gerçekleştirmek için
+   XPath, CSS vb. gibi konum belirleyiciler kullanılır.
+   Bu konum belirleyicilerin çalışmaması durumunda JavaScriptExecutor'ı kullanabilirsiniz.
+   Bir web öğesinde istenen bir işlemi gerçekleştirmek için JavaScriptExecutor'ı kullanabilirsiniz.
+   Selenium, javaScriptExecutor'ı destekler. Ekstra bir eklenti veya eklentiye gerek yoktur.
+   JavaScriptExecutor kullanmak için komut dosyasında (org.openqa.selenium.JavascriptExecutor) içe aktarmanız yeterlidir.
 
             executeScript aracılığıyla sayfayı 1000 piksel kaydırın.
             Javascript yöntemi ScrollBy(), web sayfasını belirli piksel sayısına kaydırır.
